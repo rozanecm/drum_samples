@@ -1,99 +1,79 @@
 <!DOCTYPE html>
 
 <head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>My drum samples</title>
 	<meta name="author" content="Matias Rozanec" />
-	<meta name="description" content="drums samples home recording" />
+	<meta name="description" content="Drums samples (fast) recorded at home" />
 	<meta name="keywords"  content="drum, recording, samples" />
 	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="src/examples.css" />
-	
-	<style>
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
+<style> 
+html{ 
+	background: url("res/drums_bckg_small.jpeg") no-repeat center center fixed;
+	background-size: cover;
+}
 
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	.section{
-		background-size: cover;
-	}
-	.slide{
+@media screen and (min-width: 700px) {
+  html { 
+		background: url("res/drums_bckg_medium.jpeg") no-repeat center center fixed;
 		background-size: cover;
 	}
 
-	/* Defining each section background and styles
-	* --------------------------------------- */
-	#section0{
-		background-image: url(res/drum-drums-musical-instrument-237464.jpg);
-	}
-	#section0 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;
+@media screen and (min-width: 1300px) {
+  html { 
+		background: url("res/drums_bckg_large.jpeg") no-repeat center center fixed;
+		background-size: cover;
 	}
 
-	/* button */
-    .example_b {
-        color: #fff !important;
-        text-transform: uppercase;
-        background: #60a3bc;
-        padding: 20px;
-        border-radius: 50px;
-        display: inline-block;
-        border: none;
-    }
+@media screen and (min-width: 2000px) {
+  html { 
+		background: url("res/drums_bckg_orig.jpg") no-repeat center center fixed;
+		background-size: cover;
+	}
+</style>
+<style>
+/* button */ 
+.example_b {
+	color: #fff !important; 
+	text-transform: uppercase;
+  background: #60a3bc;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+}
 
-    .example_b:hover {
-        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        transition: all 0.4s ease 0s;
-    }
-	</style>
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-	
+.example_b:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+</style>
+<style>
+.center {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+h1 {
+  font-family: 'Quattrocento', serif;
+	font-size: 6vw;
+  color: #dddddd;
+}
+</style>
 </head>
 
 <body>
-<div id="fullpage">
-	<div class="section " id="section0">
-	<div>
+	<div class="center">
 	<h1>My drum samples</h1>
 	<div class="button_cont" align="center"><a class="example_b" href="res/drum_samples.zip" target="_blank" rel="nofollow noopener">Download now (.zip)</a></div>
 	</div>
-</a>
-	</div>
-</div>
-
-
-<script type="text/javascript" src="src/fullpage.js"></script>
-<script type="text/javascript" src="examples.js"></script>
-
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-    });
-</script>
 </body>
